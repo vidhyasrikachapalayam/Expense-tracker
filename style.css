@@ -1,0 +1,106 @@
+/* Font and Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container card */
+.container {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #4CAF50;
+}
+h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: #222;
+}
+
+/* Input form */
+.add-transaction {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+button {
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #45a049;
+}
+
+/* Transaction list */
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+#list li {
+  padding: 12px;
+  margin: 10px 0;
+  background: #f9f9f9;
+  border-left: 6px solid;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.income {
+  border-color: #4CAF50;
+}
+.expense {
+  border-color: #f44336;
+}
+
+/* Delete button */
+#list li button {
+  background: #f44336;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#list li button:hover {
+  background: #d32f2f;
+}

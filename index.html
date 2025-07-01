@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>💰 Expense Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Expense Tracker</h1>
+    <h2>Your Balance: ₹<span id="balance">0.00</span></h2>
+
+    <div class="add-transaction">
+      <input type="text" id="text" placeholder="Enter description" />
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <button onclick="addTransaction()">➕ Add Transaction</button>
+    </div>
+
+    <h3>📜 History</h3>
+    <ul id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
